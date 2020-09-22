@@ -6,9 +6,22 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "framer-motion": "^2.6.13",
+    "gsap": "^3.5.1",
+    "kursor": "^0.1.6",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-icons": "^3.11.0",
+    "react-progressive-image": "^0.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-transition": "^2.0.0",
+    "react-scripts": "3.4.3",
+    "react-scroll-horizontal": "^1.6.4",
+    "react-transition-group": "^4.4.1",
+    "react-use": "^15.3.4",
+    "react-waypoint": "^9.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

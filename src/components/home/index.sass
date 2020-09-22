@@ -1,0 +1,66 @@
+.header-container
+  position: relative
+._po-absolute
+  position: absolute
+.back-svg
+  width: 70%
+  float: right
+.cloud-one,
+.cloud-two
+  width: 20%
+.cloud-two
+  transform: translate(340%,150%)
+  animation: cloud1-right-to-left 5s ease-in-out infinite
+.cloud-one
+  transform: translate(190%, 70%)
+  animation: cloud2-right-to-left 5s ease-in-out infinite
+.girl-svg
+  width: 20%
+  transform: translate(320%,110%)
+  animation: up-down 7s ease-in-out infinite
+  z-index: 1
+.shadow
+  width: 25%
+  transform: translate(245%,2950%) scale(1,1)
+  animation: shrink 7s 0.5s infinite
+.svgs-wrapper
+  transition: all 1s
+@keyframes cloud1-right-to-left
+  50%
+    transform: translate(360%,150%)
+  100%
+    transform: translate(340%,150%)
+@keyframes cloud2-right-to-left
+  50%
+    transform: translate(160%,70%)
+  100%
+    transform: translate(190%,70%)
+@keyframes up-down
+  50%
+    transform: translate(320%,102%)
+  100%
+    transform: translate(320%,110%)
+@keyframes shrink
+  50%
+    transform: translate(245%,2950%) scale(0.5,1)
+  100%
+    transform: translate(245%,2950%) scale(1,1)
+@media only screen and ( max-width: 1000px  )
+  .menu-icon-wrapper
+    width: 80vw
+    height: 10vh
+    margin: 0
+  .svgs-wrapper
+    flex-direction: column-reverse
+    height: 90vh
+    background-color: #DFF3FC
+    img
+      display: none
+    .container
+      width: 100%
+      height: 80%
+      transform: translate(2vw,10vh)
+    .intro-btn-wrapper
+      width: 90%
+      height: 100%
+      margin: 0 auto

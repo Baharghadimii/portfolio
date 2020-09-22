@@ -1,0 +1,33 @@
+$blue: #08a4f8
+.btn
+  width: 13%
+  border: 2px solid $blue
+  transform: translateX(45%)
+  margin-top: 5%
+  padding: 0.5rem 1rem
+  color: $blue
+  font-size: 120%
+  font-weight: 700
+  border-radius: 50px
+  font-family: "Baloo Paaji 2", cursive
+  cursor: none
+  &:hover
+    background-color: $blue
+    color: white
+@media only screen and ( max-width: 1024px  )
+  .btn-home-wrapper
+    width: 30%
+    transform: translateX(15%)
+    .btn
+      transform: translateX(0)
+      margin: 0 auto
+      width: 70%
+@media only screen and ( max-width: 1000px  )
+  .btn-home-wrapper
+    transform: translateX(0)
+    width: 100%
+    .btn
+      width: 13rem
+      margin: 0 auto
+      display: block
+      transform: translateX(0)

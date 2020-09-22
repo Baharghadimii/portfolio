@@ -1,0 +1,173 @@
+$light-blue: #DFF3FC
+
+.project-container
+  width: 100vw
+  .proj-wrper
+    height: 100vh
+    width: 90vw
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    .image-wrapper
+      width: 50%
+      height: 100vh
+      &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 20vh
+      img
+        opacity: 0
+        display: none
+        max-width: 40vw
+        height: auto
+    .text-container
+      width: 50%
+      height: 100vh
+      &::before
+        content: ''
+        display: block
+        height: 20vh
+      .txt-wrper
+        width: 100%
+        height: 60vh
+        .title-container
+          height: 20%
+          width: 100%
+          display: flex
+          flex-direction: row
+          .num
+            width: 200px
+            span
+              opacity: 0
+              color: $light-blue
+              display: inline-block
+              line-height: 7rem
+              font-size: 180px
+              font-weight: 900
+          .title
+            margin-left: -100px
+            overflow: hidden
+            span
+              font-size: 5vw
+              font-weight: 500
+              display: inline-block
+              line-height: 7rem
+              opacity: 0
+        .desc-container
+          width: 100%
+          height: 60%
+          .desc-wrper
+            height: 100%
+            width: 75%
+            margin: 0 auto
+            font-size: 1.7vw
+            font-weight: 500
+            line-height: 2.5rem
+            &::before
+              content: ''
+              display: block
+              height: 10vh
+            .txt
+              overflow: hidden
+              span
+                opacity: 0
+                display: block
+        .link-container
+          width: 100%
+          height: 5%
+          display: flex
+          flex-direction: row
+          &::before
+            content: ''
+            display: inline-block
+            height: 50%
+            width: 1%
+            margin-left: 8vw
+            margin-right: 5px
+            border-bottom: 1px solid black
+            transition: all 0.5s
+          &:hover
+            &::before
+              width: 5vw
+          .link-wrapper
+            width: 100%
+            font-size: 1.2vw
+            line-height: 3vh
+            a
+
+.text-animation
+  animation: text-fade-up 1s forwards ease
+.opacity-animation
+  animation: opacity 0.6s forwards
+@keyframes opacity
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes text-fade-up
+  0%
+    opacity: 0
+    transform: translate(0,50%)
+  100%
+    opacity: 1
+    transform: translate(0,0)
+@media only screen and ( max-width: 1000px )
+  ._po-absolute
+    float: right
+    position: relative !important
+  .project-container
+    height: 100vh
+    .proj-wrper
+      flex-direction: column
+      .text-container
+        width: 90%
+        margin: 0 auto
+        height: 100vh
+        .num
+          width: 80vw !important
+          text-align: center !important
+          span
+            font-size: 15rem !important
+        .title-container
+          flex-direction: column !important
+          height: 35% !important
+          .title
+            transform: translateY(-120px)
+            text-align: center
+            overflow: visible !important
+            width: 100% !important
+            margin: 0 auto !important
+            span
+              font-size: 12vw !important
+              animation: opacity 1s forwards !important
+        .desc-container
+          height: 45% !important
+          .desc-wrper
+            opacity: 0
+            width: 90vw !important
+            height: 30vh !important
+            font-size: 1.5rem !important
+            font-weight: 400 !important
+            &::before
+              height: 0 !important
+            span
+              opacity: 1 !important
+        .txt-wrper
+          height: 80vh !important
+          .link-container
+            height: 30% !important
+            flex-direction: column
+            &::before
+              width: 100% !important
+              border: none
+              height: 40%
+            .link-wrapper
+              font-size: 1rem
+              a
+                background-color: $light-blue
+                border-radius: 10px
+                padding: 0 1rem
+
+      .image-wrapper
+        display: none
