@@ -22,7 +22,9 @@ export default function ProjectItem(props) {
     if (props.index % 2 !== 0) {
       container.current.style = 'background-color: #DFF3FC; flex-direction: row-reverse'
       number.current.style.color = 'white'
-      linkA.current.style.backgroundColor = 'white'
+      if (window.innerWidth < 1000) {
+        linkA.current.style.backgroundColor = 'white'
+      }
     }
     setTimeout(() => {
       if (img.current) {
