@@ -21,18 +21,21 @@ export default function Home(props) {
     },
   }
 
-  const [menu, setMenu] = useState(false);
-  const [status, setStatus] = useState('')
-  const [changeIcon, setChangeIcon] = useState(false)
-  const [menuIcon, setMenuIcon] = useState(true)
-  const container = useRef();
-  const wrapper = useRef();
+  const [menu, setMenu] = useState(false),
+    [status, setStatus] = useState(''),
+    [changeIcon, setChangeIcon] = useState(false),
+    [menuIcon, setMenuIcon] = useState(true),
+    container = useRef(),
+    wrapper = useRef();
+
+  //svg components
+  const { cloudOne, cloudTwo, back, girl, shadow } = SvgComponents;
   const svgList = [
-    { src: SvgComponents.cloudOne, classList: 'cloud-one _po-absolute', alt: 'Cloud' },
-    { src: SvgComponents.cloudTwo, classList: 'cloud-two _po-absolute', alt: 'Cloud' },
-    { src: SvgComponents.back, classList: 'back-svg', alt: 'City' },
-    { src: SvgComponents.girl, classList: 'girl-svg _po-absolute', alt: 'Girl' },
-    { src: SvgComponents.shadow, classList: 'shadow _po-absolute', alt: 'Shadow' },
+    { src: cloudOne, classList: 'cloud-one _po-absolute', alt: 'Cloud' },
+    { src: cloudTwo, classList: 'cloud-two _po-absolute', alt: 'Cloud' },
+    { src: back, classList: 'back-svg', alt: 'City' },
+    { src: girl, classList: 'girl-svg _po-absolute', alt: 'Girl' },
+    { src: shadow, classList: 'shadow _po-absolute', alt: 'Shadow' },
   ]
   useEffect(() => {
     if (window.innerWidth < 1000) {

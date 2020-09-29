@@ -19,6 +19,7 @@
     "react-router-transition": "^2.0.0",
     "react-scripts": "3.4.3",
     "react-scroll-horizontal": "^1.6.4",
+    "react-three-fiber": "^4.2.21",
     "react-transition-group": "^4.4.1",
     "react-use": "^15.3.4",
     "react-waypoint": "^9.0.3"

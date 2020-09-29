@@ -7,16 +7,16 @@ import ProgressiveImage from 'react-progressive-image'
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }
 export default function ProjectItem(props) {
 
-  const container = useRef()
-  const img = useRef()
-  const number = useRef()
-  const title = useRef()
-  const desc1 = useRef()
-  const desc2 = useRef()
-  const desc3 = useRef()
-  const txts = useRef()
-  const link = useRef()
-  const linkA = useRef()
+  const container = useRef(),
+    img = useRef(),
+    number = useRef(),
+    title = useRef(),
+    desc1 = useRef(),
+    desc2 = useRef(),
+    desc3 = useRef(),
+    txts = useRef(),
+    link = useRef(),
+    linkA = useRef();
   useEffect(() => {
     document.getElementById('App').style.backgroundColor = 'transparent'
     if (props.index % 2 !== 0) {

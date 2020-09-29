@@ -9,13 +9,13 @@ import { motion } from 'framer-motion'
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }
 
 export default function Projects() {
-  const [menu, setMenu] = useState(false);
-  const [status, setStatus] = useState('')
-  const [changeIcon, setChangeIcon] = useState(false)
-  const [menuIcon, setMenuIcon] = useState(true)
-  const wrapper = useRef();
-  const container = useRef();
-  const elemenIds = ['first-line', 'second-line', 'third-line']
+  const [menu, setMenu] = useState(false),
+    [changeIcon, setChangeIcon] = useState(false),
+    [menuIcon, setMenuIcon] = useState(true),
+    [status, setStatus] = useState(''),
+    wrapper = useRef(),
+    container = useRef(),
+    elemenIds = ['first-line', 'second-line', 'third-line'];
 
   const handleMenu = () => {
     if (menu) {
