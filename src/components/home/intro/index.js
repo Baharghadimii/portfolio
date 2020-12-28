@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.scss'
+import Button from '../button/index'
 
 export default function Intro() {
   return (
@@ -16,7 +17,7 @@ export default function Intro() {
           <span>for creating elegant solutions.</span>
         </h2>
       </div>
-
+      <Button />
     </section>
   )
 }

@@ -4,7 +4,6 @@ import Menu from '../menu'
 import Svg from '../svg'
 import SvgComponents from '../../svgs';
 import Intro from './intro'
-import Button from './button'
 import { motion } from 'framer-motion'
 import './index.sass'
 
@@ -94,7 +93,6 @@ export default function Home(props) {
         })}
         <div className="intro-btn-wrapper">
           <Intro className="intro-container" />
-          <Button />
         </div>
       </div>
       {menu && <Menu
