@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.scss'
 import Button from '../button/index'
+import { Link } from 'react-router-dom'
 
 export default function Intro() {
   return (
@@ -18,6 +19,9 @@ export default function Intro() {
         </h2>
       </div>
       <Button />
+      <Link to="/work" className="intro-work-link">
+        Shopify store out of sync? I can fix it &rarr;
+      </Link>
     </section>
   )
 }

@@ -34,7 +34,7 @@ export default function Menu(props) {
     props.changeIcon()
   }
   const openEmail = () => {
-    window.open('mailto:bahareh.ghad@gmail.com');
+    window.open('mailto:bahar@baharghadimi.com');
   }
   const openResume = () => {
     window.open('https://resume.creddle.io/resume/ag40z7jjh9c');
@@ -49,6 +49,9 @@ export default function Menu(props) {
           <li onClick={closeMenuDiv}>
             <Link style={{ textDecoration: 'none', color: 'white', cursor: 'none' }} to="/projects">Projects</Link>
           </li>
+          <li onClick={closeMenuDiv}>
+            <Link style={{ textDecoration: 'none', color: 'white', cursor: 'none' }} to="/work">Hire me</Link>
+          </li>
           <li onClick={openEmail}>Contact</li>
           <li onClick={openResume}>Resume</li>
         </ul>
@@ -56,7 +59,7 @@ export default function Menu(props) {
           <div className="icons-wrapper">
             <FaLinkedin size={'40'} color={'white'} onClick={() => window.open('https://www.linkedin.com/in/bahareh-ghadimi/')} />
             <FaGithub size={'40'} color={'white'} onClick={() => window.open('https://github.com/Baharghadimii')} />
-            <FaEnvelope size={'40'} color={'white'} onClick={() => window.open('mailto:bahareh.ghad@gmail.com')} />
+            <FaEnvelope size={'40'} color={'white'} onClick={() => window.open('mailto:bahar@baharghadimi.com')} />
           </div>
         </div>
       </div>

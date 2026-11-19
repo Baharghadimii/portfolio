@@ -1,0 +1,194 @@
+$ink: #12212b
+$muted: #4a5a64
+$sky: #83cff8
+$blue: #08a4f8
+$blue-dark: #0679b8
+$pale: #dff3fc
+$body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+
+.wk-page
+  min-height: 100%
+  background: #ffffff
+  color: $ink
+  font-family: $body-font
+  line-height: 1.6
+  padding: 0 16px 64px
+  // The site hides the system cursor and draws its own (kursor)
+  a
+    cursor: none
+
+.wk-nav,
+.wk-hero,
+.wk-section,
+.wk-final
+  max-width: 760px
+  margin-left: auto
+  margin-right: auto
+
+.wk-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 24px 0
+  font-family: "Baloo Paaji 2", cursive
+  font-weight: 700
+  a
+    text-decoration: none
+  .wk-home
+    color: $ink
+    font-size: 1.15rem
+  .wk-navlink
+    color: $blue-dark
+
+.wk-hero
+  margin-top: 24px
+  padding: 40px 32px
+  background: $pale
+  border-radius: 24px
+
+.wk-eyebrow
+  font-family: "Baloo Paaji 2", cursive
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.08em
+  color: $blue-dark
+  margin-bottom: 8px
+
+// Override the site's global uppercase h1/h2 styles
+.wk-title,
+.wk-heading,
+.wk-subheading
+  font-family: "Baloo Paaji 2", cursive
+  text-transform: none
+  color: $ink
+  line-height: 1.2
+
+.wk-title
+  font-size: 2.6rem
+  font-weight: 800
+  margin-bottom: 16px
+
+.wk-lead
+  font-size: 1.15rem
+  color: $muted
+  max-width: 60ch
+  margin-bottom: 28px
+
+.wk-cta
+  display: inline-block
+  background: $blue-dark
+  color: #ffffff
+  text-decoration: none
+  font-family: "Baloo Paaji 2", cursive
+  font-weight: 700
+  font-size: 1.1rem
+  padding: 12px 28px
+  border-radius: 50px
+  transition: background 0.2s
+  &:hover,
+  &:focus-visible
+    background: $ink
+  &:focus-visible
+    outline: 3px solid $sky
+    outline-offset: 3px
+
+.wk-note
+  margin-top: 12px
+  font-size: 0.95rem
+  color: $muted
+
+.wk-section
+  margin-top: 56px
+
+.wk-heading
+  font-size: 1.7rem
+  font-weight: 700
+  margin-bottom: 16px
+
+.wk-subheading
+  font-size: 1.2rem
+  font-weight: 700
+  margin-bottom: 4px
+
+.wk-text
+  color: $muted
+  font-size: 1.05rem
+  max-width: 65ch
+
+.wk-list
+  list-style: none
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 12px
+  li
+    background: #f6fbfe
+    border: 1px solid $pale
+    border-left: 4px solid $sky
+    border-radius: 12px
+    padding: 14px 16px
+    color: $ink
+
+.wk-steps
+  list-style: none
+  margin-top: 20px
+  display: grid
+  gap: 24px
+  li
+    display: flex
+    gap: 16px
+    align-items: flex-start
+
+.wk-num
+  flex: 0 0 auto
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: $pale
+  color: $blue-dark
+  font-family: "Baloo Paaji 2", cursive
+  font-weight: 800
+  font-size: 1.2rem
+  display: flex
+  align-items: center
+  justify-content: center
+
+.wk-two
+  display: grid
+  grid-template-columns: 3fr 2fr
+  gap: 40px
+
+.wk-links
+  margin-top: 12px
+  display: flex
+  gap: 20px
+  a
+    color: $blue-dark
+    font-weight: 600
+
+.wk-final
+  margin-top: 64px
+  padding: 40px 32px
+  border-radius: 24px
+  background: $pale
+  text-align: center
+  .wk-text
+    margin: 0 auto 24px
+
+.wk-email
+  margin-top: 12px
+  color: $muted
+  user-select: all
+
+@media only screen and (max-width: 700px)
+  .wk-hero,
+  .wk-final
+    padding: 28px 20px
+  .wk-title
+    font-size: 1.9rem
+  .wk-list,
+  .wk-two
+    grid-template-columns: 1fr
+  .wk-two
+    gap: 0
+    > div + div
+      margin-top: 40px

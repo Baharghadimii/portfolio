@@ -67,6 +67,29 @@ h2 {
   }
 }
 
+.intro-work-link {
+  display: block;
+  margin-top: 1.25rem;
+  color: #0679b8;
+  font-weight: 700;
+  font-size: 110%;
+  text-decoration: none;
+  cursor: none;
+  opacity: 0;
+  animation: introLinkIn 1s 2.2s forwards;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+@keyframes introLinkIn {
+  to {
+    opacity: 1;
+  }
+}
+
 .usechrome {
   font-size: 10px;
   color: #fff;
