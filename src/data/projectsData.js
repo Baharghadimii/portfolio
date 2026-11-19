@@ -8,7 +8,7 @@ export default [
       'every position quoted and sourced.'
     ],
     link: 'https://northvanvotes.ca/',
-    picSrc: '/projects/northvan-votes.jpg',
-    compressedImg: '/projects/northvan-votes-small.jpg'
+    picSrc: '/projects/northvan-votes-results.jpg',
+    compressedImg: '/projects/northvan-votes-results-small.jpg'
   }
 ]
