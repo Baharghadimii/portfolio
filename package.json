@@ -25,8 +25,8 @@
     "sass": "^1.32.13"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "start": "node scripts/react-scripts.js start",
+    "build": "node scripts/react-scripts.js build",
     "deploy": "aws s3 sync build/ s3://portfolio-bahareh --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
