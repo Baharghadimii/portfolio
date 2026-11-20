@@ -126,8 +126,10 @@ export default function Work() {
         <h2 id="wk-about" className="wk-heading">About me</h2>
         <p className="wk-text">
           I’m Bahareh (Bahar), a software engineer in North Vancouver, Canada.
-          I’ve worked as a front-end developer at a marketing agency and as a
-          software engineer at Dapper Labs. My own Etsy shop runs on an
+          I’ve worked as a front-end developer at Matter, an ecommerce funnel
+          platform, where I worked on the Shopify and WooCommerce integrations
+          that synced orders and products, and as a software engineer at Dapper
+          Labs. My own Etsy shop runs on an
           automated setup I built, so I know how quickly a bad sync turns into
           a mess, and how to clean one up carefully.
         </p>

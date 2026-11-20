@@ -1,0 +1,205 @@
+$ink: #12212b
+$muted: #4a5a64
+$line: #d9e9f2
+$blue-dark: #0679b8
+$pale: #dff3fc
+$body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+
+.rs-page
+  min-height: 100%
+  background: #ffffff
+  color: $ink
+  font-family: $body-font
+  line-height: 1.5
+  padding: 0 16px 64px
+  a
+    cursor: none
+
+.rs-nav,
+.rs-sheet
+  max-width: 800px
+  margin-left: auto
+  margin-right: auto
+
+.rs-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 24px 0
+  font-family: "Baloo Paaji 2", cursive
+  font-weight: 700
+  .rs-home
+    color: $ink
+    font-size: 1.15rem
+    text-decoration: none
+
+.rs-download
+  background: $blue-dark
+  color: #ffffff
+  text-decoration: none
+  padding: 8px 20px
+  border-radius: 50px
+  &:hover,
+  &:focus-visible
+    background: $ink
+
+.rs-sheet
+  border-top: 4px solid $pale
+  padding-top: 32px
+
+// Override the site's global uppercase h1/h2 styles
+.rs-name,
+.rs-heading,
+.rs-company
+  font-family: "Baloo Paaji 2", cursive
+  text-transform: none
+  color: $ink
+  line-height: 1.2
+
+.rs-name
+  font-size: 2.4rem
+  font-weight: 800
+
+.rs-title
+  font-size: 1.1rem
+  color: $blue-dark
+  font-weight: 600
+  margin-top: 2px
+
+.rs-contact
+  margin-top: 10px
+  display: flex
+  flex-wrap: wrap
+  gap: 4px 16px
+  font-size: 0.92rem
+  color: $muted
+  a
+    color: $muted
+
+.rs-section
+  margin-top: 28px
+
+.rs-summary
+  color: $muted
+  font-size: 1rem
+
+.rs-heading
+  font-size: 1.25rem
+  font-weight: 700
+  padding-bottom: 6px
+  margin-bottom: 14px
+  border-bottom: 1px solid $line
+
+.rs-job
+  margin-bottom: 18px
+  break-inside: avoid
+
+.rs-job-top
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  gap: 12px
+
+.rs-company
+  font-size: 1.08rem
+  font-weight: 700
+
+.rs-role
+  font-weight: 500
+  color: $muted
+
+.rs-dates
+  font-size: 0.92rem
+  color: $muted
+  white-space: nowrap
+
+.rs-place
+  font-size: 0.88rem
+  color: $muted
+
+.rs-about
+  font-size: 0.9rem
+  color: $muted
+  font-style: italic
+  margin-top: 2px
+
+.rs-points
+  margin: 6px 0 0 1.1rem
+  li
+    margin-bottom: 4px
+    font-size: 0.96rem
+  a
+    color: $blue-dark
+
+.rs-skills
+  display: grid
+  gap: 6px
+  div
+    display: grid
+    grid-template-columns: 110px 1fr
+    gap: 12px
+  dt
+    font-weight: 700
+  dd
+    color: $muted
+
+.rs-two
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 32px
+
+.rs-edu
+  font-size: 0.95rem
+  margin-bottom: 6px
+  color: $muted
+  strong
+    color: $ink
+
+@media only screen and (max-width: 700px)
+  .rs-name
+    font-size: 2rem
+  .rs-job-top
+    flex-direction: column
+    gap: 0
+  .rs-two
+    grid-template-columns: 1fr
+    gap: 0
+    > div + div
+      margin-top: 28px
+  .rs-skills div
+    grid-template-columns: 1fr
+    gap: 0
+
+@media print
+  @page
+    size: Letter
+    margin: 0.38in 0.55in
+  html
+    font-size: 11px
+  html, body, #root, .App
+    background: #ffffff !important
+    height: auto !important
+    min-height: 0 !important
+  // The site's custom cursor (kursor) draws elements that would print
+  .kursor,
+  .kursorChild
+    display: none !important
+  .rs-page
+    padding: 0
+    min-height: 0
+  .rs-nav
+    display: none
+  .rs-sheet
+    border-top: none
+    padding-top: 0
+    max-width: none
+  .rs-section
+    margin-top: 1.1rem
+  .rs-heading
+    margin-bottom: 0.6rem
+  .rs-job
+    margin-bottom: 0.8rem
+  .rs-points li
+    margin-bottom: 2px
+  a
+    text-decoration: none

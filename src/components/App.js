@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './home'
 import Projects from './projects'
 import Work from './work'
+import Resume from './resume'
 import './App.sass';
 import {
   BrowserRouter as Router,
@@ -24,6 +25,7 @@ function App() {
                 <Projects />
               </Route>
               <Route path="/work" component={Work} />
+              <Route path="/resume" component={Resume} />
             </Switch>
           </AnimatePresence>
         )}></Route>

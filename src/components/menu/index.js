@@ -36,9 +36,6 @@ export default function Menu(props) {
   const openEmail = () => {
     window.open('mailto:bahar@baharghadimi.com');
   }
-  const openResume = () => {
-    window.open('https://resume.creddle.io/resume/ag40z7jjh9c');
-  }
   return (
     <div ref={nav} id='nav' className='menu-wrapper' >
       <div className='menu-list'>
@@ -53,7 +50,9 @@ export default function Menu(props) {
             <Link style={{ textDecoration: 'none', color: 'white', cursor: 'none' }} to="/work">Hire me</Link>
           </li>
           <li onClick={openEmail}>Contact</li>
-          <li onClick={openResume}>Resume</li>
+          <li onClick={closeMenuDiv}>
+            <Link style={{ textDecoration: 'none', color: 'white', cursor: 'none' }} to="/resume">Resume</Link>
+          </li>
         </ul>
         <div className="icons-holder">
           <div className="icons-wrapper">
